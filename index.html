@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script src='https://kit.fontawesome.com/138f20aa8b.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>ACORDEON CON JQUERY</h1>
+    <br>
+    <br>
+
+    <div class="acordeon_titulo ancho">
+        <h3>mision</h3>
+        <i class="icono fa-solid fa-arrow-down"></i>
+    </div>
+
+    <article class="acordeon_contenido2 ancho">
+        <p>Quis esse proident anim fugiat fugiat incididunt enim non ex eu labore nisi et. Aliqua enim in deserunt exercitation laborum nostrud dolore cupidatat nostrud est esse. Quis sunt ex minim excepteur. In sit Lorem id occaecat enim minim elit dolore. </p>
+    <p>Duis magna commodo nulla culpa excepteur dolore eiusmod id aute tempor est mollit nulla ad. Aliquip qui eu irure voluptate deserunt dolor tempor esse. In proident velit ullamco est veniam anim quis commodo dolor ullamco velit cillum.</p>
+    </article>
+    <div class="acordeon_titulo ancho">
+        <h3>vision</h3>
+        <i class="icono fa-solid fa-arrow-down"></i>
+    </div>
+    <article class="acordeon_contenido2 ancho">
+        <p>Nostrud occaecat duis adipisicing sunt id Lorem Lorem ex. Cillum excepteur elit mollit nostrud ex minim cupidatat quis. Ea esse labore officia sint reprehenderit excepteur quis aute. Qui mollit ullamco sint cupidatat non non tempor ipsum adipisicing dolore laboris tempor magna. Voluptate nisi occaecat consectetur aute elit id et Lorem duis incididunt est eu. Tempor et cupidatat pariatur dolore adipisicing pariatur.Eiusmod in laboris exercitation ad reprehenderit culpa velit cillum eiusmod minim anim reprehenderit. Ea anim ut laborum enim non nostrud anim aute incididunt voluptate nostrud aute laboris. Aliqua elit eiusmod adipisicing officia quis sunt velit officia laborum ullamco. Aliqua et elit magna eu. Ullamco ad minim dolor adipisicing ut anim. </p>
+    </article>
+    <div class="acordeon_titulo ancho">
+        <h3>valores</h3>
+        <i class="icono fa-solid fa-arrow-down"></i>
+    </div>
+    <article class="acordeon_contenido2 ancho">
+        <p>Consequat ex aute duis sit cillum culpa et. Lorem velit consequat quis occaecat ipsum adipisicing laborum eu reprehenderit incididunt est. Cupidatat laborum voluptate qui aliqua voluptate reprehenderit labore do veniam eu aliqua excepteur. Ad nulla id non veniam excepteur id.</p>
+    </article>
+
+    <script>
+        $(".acordeon_titulo").click(function(){
+            var t = $(this);
+            var tp = t.next();
+            tp.slideToggle();
+        });
+    </script>
+</body>
+</html>
